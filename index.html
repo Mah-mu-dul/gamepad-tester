@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game controller by myself</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="slider-handler.js" defer></script>
+</head>
+
+<body>
+    <div id="buttons" style="height: 115px;">
+        <h1>Not Connected</h1>
+    </div>
+    <div class="axis " style="width:70vw; display: flex; justify-content:space-between; margin:0 auto">
+        <span style="display: flex; width:100px;">
+            <p id="leftY">Left Y :</p>
+            <p id="axis-1"></p>
+        </span>
+        <span style="display: flex; width:100px;">
+            <p id="leftX"> Left X :</p>
+            <p id="axis-0"></p>
+        </span>
+        <span style="display: flex; width:100px;">
+            <p id="rightX">Right X :</p>
+            <p id="axis-2"></p>
+        </span>
+        <span style="display: flex; width:100px;">
+            <p id="rightY">Right Y :</p>
+            <p id="axis-3"></p>
+        </span>
+    </div>
+
+
+
+
+
+    <!-- axis slider  -->
+
+
+
+
+    <div class="slider-container" style="display: flex; justify-content:space-between">
+        <svg style="height: 400px; " viewBox="0 0 29.58 401.64">
+            <g>
+                <path style="fill:none; stroke:#58595b; stroke-miterlimit:10; stroke-width:0.5px;"
+                    d="M20.51,5.93V395.71a5.68,5.68,0,0,1-5.68,5.68h0a5.68,5.68,0,0,1-5.68-5.68V5.93A5.68,5.68,0,0,1,14.83.25h0A5.68,5.68,0,0,1,20.51,5.93Z" />
+                <circle id="left-y-axis" style=" fill: #555" cx="14.79" cy="200.82" r="13" />
+            </g>
+        </svg>
+
+
+
+
+        <svg style="width: 400px;" viewBox="0 0 401.64 29.58">
+            <path style="fill: none; stroke: #e15d0b; stroke-miterlimit: 10; stroke-width: 0.5px;"
+                d="M395.71,20.51H5.93A5.68,5.68,0,0,1,.25,14.83h0A5.68,5.68,0,0,1,5.93,9.15H395.71a5.68,5.68,0,0,1,5.68,5.68h0A5.68,5.68,0,0,1,395.71,20.51Z" />
+            <circle id="left-x-axis" style=" fill: #555" cx="200" cy="14.79" r="13" />
+        </svg><br>
+
+        <svg style="width: 400px;" viewBox="0 0 401.64 29.58">
+            <path style="fill: none; stroke: #e15d0b; stroke-miterlimit: 10; stroke-width: 0.5px;"
+                d="M395.71,20.51H5.93A5.68,5.68,0,0,1,.25,14.83h0A5.68,5.68,0,0,1,5.93,9.15H395.71a5.68,5.68,0,0,1,5.68,5.68h0A5.68,5.68,0,0,1,395.71,20.51Z" />
+
+
+            <circle id="right-x-axis" style=" fill: #555" cx="200" cy="14.79" r="13" />
+        </svg>
+
+        <svg style="height: 400px; " viewBox="0 0 29.58 401.64">
+            <g>
+                <path style="fill:none; stroke:#58595b; stroke-miterlimit:10; stroke-width:0.5px;"
+                    d="M20.51,5.93V395.71a5.68,5.68,0,0,1-5.68,5.68h0a5.68,5.68,0,0,1-5.68-5.68V5.93A5.68,5.68,0,0,1,14.83.25h0A5.68,5.68,0,0,1,20.51,5.93Z" />
+                <circle id="right-y-axis" style=" fill: #555" cx="14.79" cy="200.82" r="13" />
+            </g>
+        </svg>
+
+
+
+    </div>
+
+
+
+
+    <div class="joystick" style="width: fit-content; margin:-100px auto">
+        <svg style="width:500px; " version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 350 383"
+            style="enable-background:new 0 0 350 383;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill: rgba(255, 255, 255, 0.445);
+                    stroke: #33ff6397;
+                    stroke-miterlimit: 10;
+                }
+
+                .stcirculer {
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                    fill: #FFFFFF;
+                    filter: url(#Adobe_OpacityMaskFilter);
+                }
+
+                .st2 {
+                    mask: url(#path-13-inside-5_1_);
+
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st3 {
+                    filter: url(#Adobe_OpacityMaskFilter_1_);
+                }
+
+                .st4 {
+                    mask: url(#path-14-inside-6_1_);
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st5 {
+                    filter: url(#Adobe_OpacityMaskFilter_2_);
+                }
+
+                .st6 {
+                    mask: url(#path-15-inside-7_1_);
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st7 {
+                    filter: url(#Adobe_OpacityMaskFilter_3_);
+                }
+
+                .st8 {
+                    mask: url(#path-16-inside-8_1_);
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st9 {
+                    filter: url(#Adobe_OpacityMaskFilter_4_);
+                }
+
+                .st10 {
+                    mask: url(#path-8-inside-1_2_);
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st11 {
+                    filter: url(#Adobe_OpacityMaskFilter_5_);
+                }
+
+                .st12 {
+                    mask: url(#path-9-inside-2_2_);
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st13 {
+                    filter: url(#Adobe_OpacityMaskFilter_6_);
+                }
+
+                .st14 {
+                    mask: url(#path-10-inside-3_2_);
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+                .st15 {
+                    filter: url(#Adobe_OpacityMaskFilter_7_);
+                }
+
+                .st16 {
+                    mask: url(#path-11-inside-4_2_);
+                    stroke: #00000097;
+                    stroke-miterlimit: 10;
+                }
+
+            </style>
+            <path id="LOutline" class="" d="M175,273.2c0,0-20.2,0-56,0s-54.4,66.7-79.8,66.7S3.2,328.3,3.2,291.5s31.3-120.6,40.5-142.9
+        	s32.1-36.1,57.9-36.1c20.6,0,57.5,0,73.4,0" fill="url(#image-pattern)" />
+            <defs>
+                <pattern id="image-pattern" x="0" y="0" patternUnits="userSpaceOnUse" width="400" height="400">
+                    <image href="background-Images/bg.jpg" x="0" y="0" width="400" height="400" />
+                </pattern>
+            </defs>
+            <path id="ROutline" class="" d="M174.6,273.2c0,0,20.2,0,56,0s54.4,66.7,79.8,66.7s36.1-11.6,36.1-48.4S315.1,170.9,306,148.6
+        	s-32.1-36.1-57.9-36.1c-20.6,0-57.5,0-73.4,0" fill="url(#image-pattern)" />
+            <circle id="LStickOutline" class="st0" cx="132.9" cy="228.4" r="29.8" />
+            <circle class="st0" fill="#fff7dbdd" cx="133" cy="228.3" r="15" />
+            <circle id="btn-10" class="stcirculer" fill="#fff7dbdd" cx="133" cy="228.3" r="22.2" />
+            <circle id="RStickOutline" class="st0" cx="220.6" cy="228.4" r="29.8" />
+            <circle class="st0" fill="#fff7dbdd" cx="220.7" cy="228.4" r="15" />
+            <circle id="btn-11" class="stcirculer" fill="#fff7dbdd" cx="220.7" cy="228.4" r="22.2" />
+            <circle id="BOutline" class="st0" cx="261.1" cy="166.5" r="29.8" />
+            <g id="BTop">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="249" y="143.3" width="23.7"
+                        height="18.2">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-3" class="st2" d="M270.4,154.1c2.5-2.5,2.5-6.6-0.6-8.2c-0.4-0.2-0.9-0.4-1.3-0.6c-2.4-1-5-1.5-7.6-1.5s-5.2,0.5-7.6,1.5
+                      c-0.4,0.2-0.9,0.4-1.3,0.6c-3.1,1.6-3.1,5.7-0.6,8.2l5.1,5c2.5,2.5,6.5,2.5,9,0L270.4,154.1z"
+                    fill="#fff7dbdd" />
+            </g>
+            <g id="BRight">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="266" y="154.4" width="18.2"
+                        height="23.7">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-1" class="st2" d="M273.4,175.8c2.5,2.5,6.6,2.5,8.2-0.6c0.2-0.4,0.4-0.9,0.6-1.3c1-2.4,1.5-5,1.5-7.6c0-2.6-0.5-5.2-1.5-7.6
+        		c-0.2-0.4-0.4-0.9-0.6-1.3c-1.6-3.1-5.7-3.1-8.2-0.6l-5.1,5.1c-2.5,2.5-2.5,6.5,0,9L273.4,175.8z"
+                    fill="#fff7dbdd" />
+            </g>
+            <g id="BBottom">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="249.4" y="171.3"
+                        width="23.7" height="18.2">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-0" class="st2" d="M251.7,178.8c-2.5,2.5-2.5,6.6,0.6,8.2c0.4,0.2,0.9,0.4,1.3,0.6c2.4,1,5,1.5,7.6,1.5c2.6,0,5.2-0.5,7.6-1.5
+        		c0.4-0.2,0.9-0.4,1.3-0.6c3.1-1.6,3.1-5.7,0.6-8.2l-5.1-5.1c-2.5-2.5-6.5-2.5-9,0L251.7,178.8z"
+                    fill="#fff7dbdd" />
+            </g>
+            <g id="BLeft">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter_3_" filterUnits="userSpaceOnUse" x="237.9" y="154.8"
+                        width="18.2" height="23.7">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-2" class="st8" d="M248.7,157.1c-2.5-2.5-6.6-2.5-8.2,0.6c-0.2,0.4-0.4,0.9-0.6,1.3c-1,2.4-1.5,5-1.5,7.6s0.5,5.2,1.5,7.6
+        		c0.2,0.4,0.4,0.9,0.6,1.3c1.6,3.1,5.7,3.1,8.2,0.6l5.1-5.1c2.5-2.5,2.5-6.5,0-9L248.7,157.1z"
+                    fill="#fff7dbdd" />
+            </g>
+            <g id="LMeta">
+                <circle id="btn-8" class="stcirculer" fill="#fff7dbdd" cx="146.8" cy="148.1" r="7.9" fill="#fff7dbdd" />
+            </g>
+            <g id="RMeta">
+                <circle id="btn-9" class="stcirculer" fill="#fff7dbdd" cx="205.6" cy="148.1" r="7.9" />
+            </g>
+            <path id="btn-4" class="stcirculer" fill="#fff7dbdd" d="M93.7,88.3h22.2c2.8,0,5.2,2.3,5.2,5.2l0,0c0,2.8-2.3,5.2-5.2,5.2H93.7
+        	c-2.8,0-5.2-2.3-5.2-5.2l0,0C88.5,90.6,90.8,88.3,93.7,88.3z" />
+            <path id="btn-5" class="stcirculer" fill="#fff7dbdd" d="M234.9,88.3h22.2c2.8,0,5.2,2.3,5.2,5.2l0,0c0,2.8-2.3,5.2-5.2,5.2h-22.2
+        	c-2.8,0-5.2-2.3-5.2-5.2l0,0C229.8,90.6,232.1,88.3,234.9,88.3z" />
+            <path id="btn-6" class="stcirculer" fill="#fff7dbdd" d="M121,68.9c0,3.3-2.7,6-6,6h-10.3c-3.3,0-6-2.7-6-6V52.6c0-6.1,5-11.1,11.1-11.1
+        	s11.1,5,11.1,11.1V68.9z" />
+            <path id="btn-7" class="stcirculer" fill="#fff7dbdd" d="M252,68.9c0,3.3-2.7,6-6,6h-10.3c-3.3,0-6-2.7-6-6V52.6c0-6.1,5-11.1,11.1-11.1
+        	s11.1,5,11.1,11.1V68.9z" />
+            <line class="st0" x1="23.8" y1="206.2" x2="103.2" y2="277.6" />
+            <line class="st0" x1="326.2" y1="206.2" x2="246.8" y2="277.6" />
+            <circle id="DOutline" class="st0" cx="93" cy="164.6" r="29.8" />
+            <g id="DUp">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter_4_" filterUnits="userSpaceOnUse" x="80.9" y="141.4" width="23.7"
+                        height="18.2">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-12" class="st10" d="M102.3,152.2c2.5-2.5,2.5-6.6-0.6-8.2c-0.4-0.2-0.9-0.4-1.3-0.6c-2.4-1-5-1.5-7.6-1.5c-2.6,0-5.2,0.5-7.6,1.5
+        		c-0.4,0.2-0.9,0.4-1.3,0.6c-3.1,1.6-3.1,5.7-0.6,8.2l5.1,5c2.5,2.5,6.5,2.5,9,0L102.3,152.2z"
+                    fill="#fff7dbdd" />
+            </g>
+            <g id="DRight">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter_5_" filterUnits="userSpaceOnUse" x="97.8" y="152.5" width="18.2"
+                        height="23.7">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-15" class="st12" d="M105.2,173.9c2.5,2.5,6.6,2.5,8.2-0.6c0.2-0.4,0.4-0.9,0.6-1.3c1-2.4,1.5-5,1.5-7.6c0-2.6-0.5-5.2-1.5-7.6
+        		c-0.2-0.4-0.4-0.9-0.6-1.3c-1.6-3.1-5.7-3.1-8.2-0.6l-5.1,5.1c-2.5,2.5-2.5,6.5,0,9L105.2,173.9z"
+                    fill="#fff7dbdd" />
+            </g>
+            <g id="DDown">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter_6_" filterUnits="userSpaceOnUse" x="81.3" y="169.5" width="23.7"
+                        height="18.2">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-13" class="st14" d="M83.6,176.9c-2.5,2.5-2.5,6.6,0.6,8.2c0.4,0.2,0.9,0.4,1.3,0.6c2.4,1,5,1.5,7.6,1.5c2.6,0,5.2-0.5,7.6-1.5
+        		c0.4-0.2,0.9-0.4,1.3-0.6c3.1-1.6,3.1-5.7,0.6-8.2l-5.1-5.1c-2.5-2.5-6.5-2.5-9,0L83.6,176.9z"
+                    fill="#fff7dbdd" />
+            </g>
+            <g id="DLeft">
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter_7_" filterUnits="userSpaceOnUse" x="69.8" y="152.9" width="18.2"
+                        height="23.7">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+                    </filter>
+                </defs>
+
+                <path id="btn-14" class="st16" d="M80.6,155.2c-2.5-2.5-6.6-2.5-8.2,0.6c-0.2,0.4-0.4,0.9-0.6,1.3c-1,2.4-1.5,5-1.5,7.6c0,2.6,0.5,5.2,1.5,7.6
+        		c0.2,0.4,0.4,0.9,0.6,1.3c1.6,3.1,5.7,3.1,8.2,0.6l5-5.1c2.5-2.5,2.5-6.5,0-9L80.6,155.2z" fill="#fff7dbdd" />
+            </g>
+        </svg>
+    </div>
+    <div class="exisPanel">
+
+    </div>
+
+</body>
+
+</html>
